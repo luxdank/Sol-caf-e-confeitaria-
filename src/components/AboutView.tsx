@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { StoreInfo } from '../types';
+import { ASSET_IMAGES } from '../assets/imagesMap';
 import {
   MapPin,
   Clock,
@@ -30,7 +31,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ storeInfo }) => {
       {/* Hero Showcase Banner */}
       <div className="relative rounded-3xl overflow-hidden shadow-sm bg-pink-100 h-44 sm:h-56">
         <img
-          src="/src/assets/images/confeitaria_hero_banner_1791231828334.jpg"
+          src={ASSET_IMAGES.heroBanner}
           alt="Vitrine Sol Café & Confeitaria"
           className="w-full h-full object-cover"
         />

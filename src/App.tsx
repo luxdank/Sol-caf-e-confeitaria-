@@ -30,9 +30,10 @@ export default function App() {
         // Merge with INITIAL_MENU_ITEMS so that all items receive their authentic image
         return parsed.map((item) => {
           const initial = INITIAL_MENU_ITEMS.find((i) => i.id === item.id);
+          const isBrokenPath = !item.image || item.image.startsWith('/src/assets') || item.image.includes('googleusercontent.com');
           return {
             ...item,
-            image: item.image || initial?.image
+            image: (isBrokenPath && initial) ? initial.image : (item.image || initial?.image)
           };
         });
       }

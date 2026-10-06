@@ -1,4 +1,5 @@
 import { Category, MenuItem, StoreInfo } from '../types';
+import { ASSET_IMAGES } from '../assets/imagesMap';
 
 export const STORE_INFO: StoreInfo = {
   name: 'Sol Café & Confeitaria',
@@ -10,7 +11,7 @@ export const STORE_INFO: StoreInfo = {
   hours: 'Terça a Domingo das 07:30 às 20:00',
   paymentMethods: ['PIX', 'Dinheiro', 'Cartão de Débito', 'Cartão de Crédito'],
   pixKey: '21986964717',
-  logoUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAiTyh9RRDrKarxALYcxt6H8Oqn69TE992Nki-51tWa5XZv2vImkQGn7EwdV4m1sJodeFMJG1cYRNj2tgUzHQ67PG1CHK_HG4eEec-hQYiMZfTuHDQt3fNSlg49HCaQDydgF9wiHjiKLtthP3j_ydGNSOnscLbG4mCgqSt0kuPYpeQAOgghs1JzOceM8pWY0vKLrBcNT9tkJlynSqvMb3oeP8Rw1GpZvxfVNp3QJRpD-Ye_msVZnbDMjM3mHR1zGGR0vA'
+  logoUrl: ASSET_IMAGES.logo
 };
 
 export const INITIAL_CATEGORIES: Category[] = [
@@ -19,56 +20,56 @@ export const INITIAL_CATEGORIES: Category[] = [
     name: 'Tapiocas',
     icon: '🥞',
     badge: 'Feito na hora',
-    image: '/src/assets/images/item_tapioca_salgada_1791309224536.jpg'
+    image: ASSET_IMAGES.tapiocaSalgada
   },
   {
     id: 'cat-cafe-lanches',
     name: 'Café da Manhã & Lanches',
     icon: '☕',
     badge: 'Favoritos',
-    image: '/src/assets/images/item_pao_ovo_chapa_1791309342810.jpg'
+    image: ASSET_IMAGES.paoOvo
   },
   {
     id: 'cat-salgados',
     name: 'Salgados',
     icon: '🥟',
     badge: 'Crocantes',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAOnJxKqlch__yG5T2yTSJhhwnN1QsKYbqNtWknhJVjB2IY-bkJ0oyBdyG3iN4BR8apj1DrCVU5isBZ3DGEGVeiyrmRvSYsSbSlEBCoaxdwOKh7K-3QhWss08quToog7N1q7TfGnPUQ3wr3EeJs9x2022oS_dJYMRD6EZGq48yAN4cNIUERKDoR_fdWyF3R7FzMjpl-zwa_3liOsOix8l6LqoNKbHxz5P8F6yRcQ18eDO9TrHn-dlR1'
+    image: ASSET_IMAGES.coxinha
   },
   {
     id: 'cat-pratos',
     name: 'Pratos Especiais',
     icon: '🍝',
     badge: 'Almoço & Jantar',
-    image: '/src/assets/images/item_talharim_camarao_1791309257143.jpg'
+    image: ASSET_IMAGES.talharim
   },
   {
     id: 'cat-doces',
     name: 'Doces & Sobremesas',
     icon: '🍰',
     badge: 'Confeitaria',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC2xnIlP7ZgolpqquEAH0a5N6NslbJgoWvquHZT5RiNGun91ay4wCxrAvlV_pN9nnoH7MjdSjSTxppldo98sD8mLFlRyBswm1O8C712-AdxIWsGcTjTXvvGwCC9YK-ttA4KRGH7azTh3fdeSEB1Yk8zByZNthG03Gbev7o_Wcd6FZoPOlmLJCqTcTezuAU1aTOdDAKS0sCm8E7y5P0i3dR6k8HfmbLfVlbplm9n9WVivkjL82JUhK2s'
+    image: ASSET_IMAGES.pudim
   },
   {
     id: 'cat-bebidas-quentes',
     name: 'Bebidas Quentes',
     icon: '☕',
     badge: 'Cafés Especiais',
-    image: '/src/assets/images/item_cafe_espresso_1791309412941.jpg'
+    image: ASSET_IMAGES.cappuccino
   },
   {
     id: 'cat-bebidas-geladas',
     name: 'Bebidas Geladas',
     icon: '🥤',
     badge: 'Refrescantes',
-    image: '/src/assets/images/item_mate_gelado_1791309424171.jpg'
+    image: ASSET_IMAGES.mateGelado
   },
   {
     id: 'cat-sucos',
     name: 'Sucos Naturais',
     icon: '🧃',
     badge: '100% Fruta',
-    image: '/src/assets/images/item_suco_natural_1791309385497.jpg'
+    image: ASSET_IMAGES.sucoNatural
   }
 ];
 
@@ -82,7 +83,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     price: 13.00,
     options: ['Frango', 'Frango com Queijo', 'Queijo', 'Ovo'],
     icon: '🥞',
-    image: '/src/assets/images/item_tapioca_salgada_1791309224536.jpg',
+    image: ASSET_IMAGES.tapiocaSalgada,
     isAvailable: true,
     highlight: true
   },
@@ -94,7 +95,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     price: 15.00,
     options: ['Morango com Nutella', 'Banana com Nutella'],
     icon: '🍓',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC2T9JYLV4Sgo2qYe9b2oO8CEo5FTnldNGQm87YUtcgWnj3JtX5XHbNMGcENDke-MeG63eoeqXXv7cX8WjorUL4ceMCeCa-3A6G1QTIMsNgEUQoJm_zeVvY-s63zTYiBk4DvloIxaNg9TyCVGI6QFf-_ZxRX_m3m8ykHoqc6oH-QxF0rW3K5ZHWcf01Aulsrodc8JBFs0jyPC76zdV3bWutLPorEDXrkN6fAzhA9lL-Cy9hLcSb-ibQ',
+    image: ASSET_IMAGES.tapiocaDoce,
     isAvailable: true,
     highlight: true
   },
@@ -105,7 +106,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Massa leve e fofinha de tapioca com ovo e recheio suculento de frango',
     price: 14.00,
     icon: '🍳',
-    image: '/src/assets/images/item_tapioca_salgada_1791309224536.jpg',
+    image: ASSET_IMAGES.tapiocaSalgada,
     isAvailable: true
   },
 
@@ -117,7 +118,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Pão quentinho com ovo frito na chapa na manteiga',
     price: 7.00,
     icon: '🍞',
-    image: '/src/assets/images/item_pao_ovo_chapa_1791309342810.jpg',
+    image: ASSET_IMAGES.paoOvo,
     isAvailable: true
   },
   {
@@ -127,7 +128,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Pão francês com ovo frito e queijo derretido crocante',
     price: 8.00,
     icon: '🥪',
-    image: '/src/assets/images/item_pao_ovo_chapa_1791309342810.jpg',
+    image: ASSET_IMAGES.paoOvo,
     isAvailable: true,
     highlight: true
   },
@@ -138,7 +139,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Pão francês, ovos mexidos, queijo, presunto, tomate e cebola fresca',
     price: 9.00,
     icon: '🍳',
-    image: '/src/assets/images/item_pao_ovo_chapa_1791309342810.jpg',
+    image: ASSET_IMAGES.paoOvo,
     isAvailable: true
   },
   {
@@ -148,7 +149,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Preparo cremoso com manteiga da terra (porção individual)',
     price: 2.50,
     icon: '🥚',
-    image: '/src/assets/images/item_pao_ovo_chapa_1791309342810.jpg',
+    image: ASSET_IMAGES.paoOvo,
     isAvailable: true
   },
   {
@@ -158,7 +159,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Omelete macia recheada com queijo derretido dourado',
     price: 7.00,
     icon: '🧀',
-    image: '/src/assets/images/item_pao_ovo_chapa_1791309342810.jpg',
+    image: ASSET_IMAGES.paoOvo,
     isAvailable: true
   },
   {
@@ -168,7 +169,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Omelete fofinha recheada com frango desfiado temperado',
     price: 8.00,
     icon: '🍗',
-    image: '/src/assets/images/item_pao_ovo_chapa_1791309342810.jpg',
+    image: ASSET_IMAGES.paoOvo,
     isAvailable: true
   },
   {
@@ -179,7 +180,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     price: 17.00,
     options: ['Frango', 'Queijo', 'Ovos'],
     icon: '🌽',
-    image: '/src/assets/images/item_cuscuz_nordestino_1791309236873.jpg',
+    image: ASSET_IMAGES.cuscuz,
     isAvailable: true,
     highlight: true
   },
@@ -190,7 +191,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Cuscuz fofinho de milho com carne assada desfiada suculenta',
     price: 18.00,
     icon: '🥩',
-    image: '/src/assets/images/item_cuscuz_nordestino_1791309236873.jpg',
+    image: ASSET_IMAGES.cuscuz,
     isAvailable: true,
     highlight: true
   },
@@ -201,7 +202,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Pão crocante com linguiça artesanal tostada na chapa',
     price: 10.00,
     icon: '🥖',
-    image: '/src/assets/images/item_sanduba_casa_1791309354507.jpg',
+    image: ASSET_IMAGES.sanduba,
     isAvailable: true
   },
   {
@@ -211,7 +212,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Sanduíche completo, farto e suculento preparado na hora',
     price: 12.00,
     icon: '🥪',
-    image: '/src/assets/images/item_sanduba_casa_1791309354507.jpg',
+    image: ASSET_IMAGES.sanduba,
     isAvailable: true
   },
   {
@@ -221,7 +222,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Hambúrguer, linguiça, ovo, queijo, presunto e salada fresca',
     price: 15.00,
     icon: '🍔',
-    image: '/src/assets/images/item_sanduba_casa_1791309354507.jpg',
+    image: ASSET_IMAGES.sanduba,
     isAvailable: true,
     highlight: true
   },
@@ -232,7 +233,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Pão de forma tostado com queijo derretido e presunto',
     price: 7.00,
     icon: '🥪',
-    image: '/src/assets/images/confeitaria_cafe_lanches_1791231837127.jpg',
+    image: ASSET_IMAGES.cafeLanches,
     isAvailable: true
   },
   {
@@ -242,7 +243,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Pão francês na chapa com muito queijo derretido e presunto',
     price: 6.50,
     icon: '🥖',
-    image: '/src/assets/images/confeitaria_cafe_lanches_1791231837127.jpg',
+    image: ASSET_IMAGES.cafeLanches,
     isAvailable: true
   },
   {
@@ -252,7 +253,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Pão francês tostado na manteiga douradinha e crocante',
     price: 4.00,
     icon: '🧈',
-    image: '/src/assets/images/confeitaria_cafe_lanches_1791231837127.jpg',
+    image: ASSET_IMAGES.cafeLanches,
     isAvailable: true
   },
 
@@ -264,7 +265,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Massa podre que derrete na boca com recheio farto e cremoso',
     price: 12.00,
     icon: '🥧',
-    image: '/src/assets/images/item_empadao_frango_1791309246835.jpg',
+    image: ASSET_IMAGES.empadao,
     isAvailable: true,
     highlight: true
   },
@@ -275,7 +276,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Massa crocante e dourada por fora com frango bem temperado',
     price: 8.00,
     icon: '🍗',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAOnJxKqlch__yG5T2yTSJhhwnN1QsKYbqNtWknhJVjB2IY-bkJ0oyBdyG3iN4BR8apj1DrCVU5isBZ3DGEGVeiyrmRvSYsSbSlEBCoaxdwOKh7K-3QhWss08quToog7N1q7TfGnPUQ3wr3EeJs9x2022oS_dJYMRD6EZGq48yAN4cNIUERKDoR_fdWyF3R7FzMjpl-zwa_3liOsOix8l6LqoNKbHxz5P8F6yRcQ18eDO9TrHn-dlR1',
+    image: ASSET_IMAGES.coxinha,
     isAvailable: true,
     highlight: true
   },
@@ -286,7 +287,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Massa cremosa de aipim frita sequinha no ponto certo com carne moída',
     price: 10.00,
     icon: '🥟',
-    image: '/src/assets/images/item_bolinho_aipim_1791309366448.jpg',
+    image: ASSET_IMAGES.bolinhoAipim,
     isAvailable: true
   },
   {
@@ -296,7 +297,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Massa artesanal com molho de tomate, queijo muçarela e orégano',
     price: 10.00,
     icon: '🍕',
-    image: '/src/assets/images/item_pizza_brotinho_1791309453198.jpg',
+    image: ASSET_IMAGES.pizzaBrotinho,
     isAvailable: true
   },
   {
@@ -307,7 +308,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     price: 14.00,
     options: ['Frango', 'Carne'],
     icon: '🌯',
-    image: '/src/assets/images/item_panqueca_molho_1791309443538.jpg',
+    image: ASSET_IMAGES.panqueca,
     isAvailable: true
   },
   {
@@ -317,7 +318,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Opções folhadas e assadas sequinhas com recheios variados',
     price: 10.00,
     icon: '🥐',
-    image: '/src/assets/images/item_bolinho_aipim_1791309366448.jpg',
+    image: ASSET_IMAGES.bolinhoAipim,
     isAvailable: true
   },
   {
@@ -327,7 +328,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Fatia generosa e bem cremosa com pão de forma e frango desfiado',
     price: 15.00,
     icon: '🍰',
-    image: '/src/assets/images/item_empadao_frango_1791309246835.jpg',
+    image: ASSET_IMAGES.empadao,
     isAvailable: true
   },
 
@@ -340,7 +341,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     price: 20.00,
     options: ['Frango', 'Calabresa', 'Carne Moída'],
     icon: '🍝',
-    image: '/src/assets/images/item_talharim_camarao_1791309257143.jpg',
+    image: ASSET_IMAGES.talharim,
     isAvailable: true,
     highlight: true
   },
@@ -351,7 +352,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Prato refinado com camarões selecionados, brócolis frescos e molho suave',
     price: 28.00,
     icon: '🍤',
-    image: '/src/assets/images/item_talharim_camarao_1791309257143.jpg',
+    image: ASSET_IMAGES.talharim,
     isAvailable: true,
     highlight: true
   },
@@ -364,7 +365,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Receita caseira quentinha, macia e perfeita com café fresco',
     price: 6.00,
     icon: '🌽',
-    image: '/src/assets/images/item_bolo_milho_1791309375520.jpg',
+    image: ASSET_IMAGES.boloMilho,
     isAvailable: true
   },
   {
@@ -374,7 +375,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Deliciosos recheios artesanais da confeitaria Sol Café com coberturas finas',
     price: 14.00,
     icon: '🎂',
-    image: '/src/assets/images/confeitaria_doces_vitrine_1791231845705.jpg',
+    image: ASSET_IMAGES.docesVitrine,
     isAvailable: true,
     highlight: true
   },
@@ -385,7 +386,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Empanada no açúcar com canela especial e casquinha dourada',
     price: 6.00,
     icon: '🥖',
-    image: '/src/assets/images/item_bolo_milho_1791309375520.jpg',
+    image: ASSET_IMAGES.boloMilho,
     isAvailable: true
   },
   {
@@ -395,7 +396,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Super lisinho com calda de caramelo dourada brilhante',
     price: 8.00,
     icon: '🍮',
-    image: '/src/assets/images/item_pudim_caramelo_1791309272601.jpg',
+    image: ASSET_IMAGES.pudim,
     isAvailable: true,
     highlight: true
   },
@@ -407,7 +408,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     price: 8.00,
     options: ['Limão', 'Maracujá'],
     icon: '🥧',
-    image: '/src/assets/images/item_pudim_caramelo_1791309272601.jpg',
+    image: ASSET_IMAGES.pudim,
     isAvailable: true
   },
   {
@@ -418,7 +419,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     price: 8.00,
     options: ['Brigadeiro Gourmet', 'Cajuzinho', 'Beijinho'],
     icon: '🍫',
-    image: '/src/assets/images/item_brigadeiros_gourmet_1791309434095.jpg',
+    image: ASSET_IMAGES.brigadeiro,
     isAvailable: true
   },
   {
@@ -429,7 +430,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     price: 8.00,
     options: ['Maracujá', 'Limão', 'Morango'],
     icon: '🍨',
-    image: '/src/assets/images/item_pudim_caramelo_1791309272601.jpg',
+    image: ASSET_IMAGES.pudim,
     isAvailable: true
   },
   {
@@ -439,7 +440,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Brownie bem molhadinho com recheio cremoso e casquinha crocante',
     price: 8.00,
     icon: '🍫',
-    image: '/src/assets/images/item_brigadeiros_gourmet_1791309434095.jpg',
+    image: ASSET_IMAGES.brigadeiro,
     isAvailable: true
   },
   {
@@ -449,7 +450,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Camadas de creme suave, chocolate e biscoito selecionado',
     price: 15.00,
     icon: '🍰',
-    image: '/src/assets/images/confeitaria_doces_vitrine_1791231845705.jpg',
+    image: ASSET_IMAGES.docesVitrine,
     isAvailable: true
   },
   {
@@ -459,7 +460,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Montado com brownies, morangos frescos e cremes nobres de confeitaria',
     price: 15.00,
     icon: '🍧',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC2xnIlP7ZgolpqquEAH0a5N6NslbJgoWvquHZT5RiNGun91ay4wCxrAvlV_pN9nnoH7MjdSjSTxppldo98sD8mLFlRyBswm1O8C712-AdxIWsGcTjTXvvGwCC9YK-ttA4KRGH7azTh3fdeSEB1Yk8zByZNthG03Gbev7o_Wcd6FZoPOlmLJCqTcTezuAU1aTOdDAKS0sCm8E7y5P0i3dR6k8HfmbLfVlbplm9n9WVivkjL82JUhK2s',
+    image: ASSET_IMAGES.docesVitrine,
     isAvailable: true,
     highlight: true
   },
@@ -470,7 +471,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Brilhante, cremoso e com muito coco fresco selecionado',
     price: 9.00,
     icon: '🍮',
-    image: '/src/assets/images/item_pudim_caramelo_1791309272601.jpg',
+    image: ASSET_IMAGES.pudim,
     isAvailable: true
   },
   {
@@ -481,7 +482,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     price: 14.00,
     options: ['Morango', 'Amora', 'Goiaba'],
     icon: '🍓',
-    image: '/src/assets/images/confeitaria_doces_vitrine_1791231845705.jpg',
+    image: ASSET_IMAGES.docesVitrine,
     isAvailable: true
   },
   {
@@ -491,7 +492,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Clássica torta com creme aveludado e cobertura espelhada de chocolate',
     price: 14.00,
     icon: '🍰',
-    image: '/src/assets/images/confeitaria_doces_vitrine_1791231845705.jpg',
+    image: ASSET_IMAGES.docesVitrine,
     isAvailable: true
   },
   {
@@ -501,7 +502,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Fatia bem molhadinha com pedaços frescos de abacaxi e coco ralado',
     price: 14.00,
     icon: '🍍',
-    image: '/src/assets/images/item_bolo_milho_1791309375520.jpg',
+    image: ASSET_IMAGES.boloMilho,
     isAvailable: true
   },
 
@@ -513,7 +514,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Expresso ou coado tradicional na hora (50ml)',
     price: 3.00,
     icon: '☕',
-    image: '/src/assets/images/item_cafe_espresso_1791309412941.jpg',
+    image: ASSET_IMAGES.cafeEspresso,
     isAvailable: true
   },
   {
@@ -523,7 +524,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Dose equilibrada para aquecer seu dia com grãos selecionados (100ml)',
     price: 4.50,
     icon: '☕',
-    image: '/src/assets/images/item_cafe_espresso_1791309412941.jpg',
+    image: ASSET_IMAGES.cafeEspresso,
     isAvailable: true
   },
   {
@@ -533,7 +534,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Para quem ama um bom café encorpado e aromático (180ml)',
     price: 5.00,
     icon: '☕',
-    image: '/src/assets/images/item_cafe_espresso_1791309412941.jpg',
+    image: ASSET_IMAGES.cafeEspresso,
     isAvailable: true
   },
   {
@@ -543,7 +544,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Leite vaporizado quentinho com toque de café especial',
     price: 5.00,
     icon: '🥛',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBQt2v9mtE2kC-dGK0HXpH55l85roCsfw5IEadCVoPjvCVUz4VhCERJfCqV7_jAUeIGTVSUFKKkVSnTHHs3vBr-ASOc8z73iRxTvruGL73XUW_ergCiXw4tZf_t808Z7dEGNpoZhRpDoHudcLn4sI81Hgr2FAoVGFxmYngyZxCyDOrh3OkH8dLTuVhrDVCT1NMyxuOsQg4WjSEywUYoV44KRPLPlh8zjKoGYsOCh8gkYWkP68T8zm33',
+    image: ASSET_IMAGES.cappuccino,
     isAvailable: true
   },
   {
@@ -553,7 +554,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Clássico pingado na medida certa com espuma suave',
     price: 5.50,
     icon: '🥛',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBQt2v9mtE2kC-dGK0HXpH55l85roCsfw5IEadCVoPjvCVUz4VhCERJfCqV7_jAUeIGTVSUFKKkVSnTHHs3vBr-ASOc8z73iRxTvruGL73XUW_ergCiXw4tZf_t808Z7dEGNpoZhRpDoHudcLn4sI81Hgr2FAoVGFxmYngyZxCyDOrh3OkH8dLTuVhrDVCT1NMyxuOsQg4WjSEywUYoV44KRPLPlh8zjKoGYsOCh8gkYWkP68T8zm33',
+    image: ASSET_IMAGES.cappuccino,
     isAvailable: true
   },
   {
@@ -563,7 +564,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Chocolate com leite quentinho cremoso',
     price: 7.00,
     icon: '☕',
-    image: '/src/assets/images/item_cafe_espresso_1791309412941.jpg',
+    image: ASSET_IMAGES.cafeEspresso,
     isAvailable: true
   },
   {
@@ -573,7 +574,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Polvilhado com canela e chocolate belga',
     price: 8.00,
     icon: '☕',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBQt2v9mtE2kC-dGK0HXpH55l85roCsfw5IEadCVoPjvCVUz4VhCERJfCqV7_jAUeIGTVSUFKKkVSnTHHs3vBr-ASOc8z73iRxTvruGL73XUW_ergCiXw4tZf_t808Z7dEGNpoZhRpDoHudcLn4sI81Hgr2FAoVGFxmYngyZxCyDOrh3OkH8dLTuVhrDVCT1NMyxuOsQg4WjSEywUYoV44KRPLPlh8zjKoGYsOCh8gkYWkP68T8zm33',
+    image: ASSET_IMAGES.cappuccino,
     isAvailable: true
   },
   {
@@ -583,7 +584,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Cremosidade irresistível com espuma de leite aveludada e toque de canela',
     price: 10.00,
     icon: '☕',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBQt2v9mtE2kC-dGK0HXpH55l85roCsfw5IEadCVoPjvCVUz4VhCERJfCqV7_jAUeIGTVSUFKKkVSnTHHs3vBr-ASOc8z73iRxTvruGL73XUW_ergCiXw4tZf_t808Z7dEGNpoZhRpDoHudcLn4sI81Hgr2FAoVGFxmYngyZxCyDOrh3OkH8dLTuVhrDVCT1NMyxuOsQg4WjSEywUYoV44KRPLPlh8zjKoGYsOCh8gkYWkP68T8zm33',
+    image: ASSET_IMAGES.cappuccino,
     isAvailable: true,
     highlight: true
   },
@@ -596,7 +597,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Chá mate carioca geladinho e refrescante preparado com limão',
     price: 8.00,
     icon: '🥤',
-    image: '/src/assets/images/item_mate_gelado_1791309424171.jpg',
+    image: ASSET_IMAGES.mateGelado,
     isAvailable: true,
     highlight: true
   },
@@ -607,7 +608,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Copo tradicional 290ml bem gelado',
     price: 2.00,
     icon: '🧃',
-    image: '/src/assets/images/item_mate_gelado_1791309424171.jpg',
+    image: ASSET_IMAGES.mateGelado,
     isAvailable: true
   },
   {
@@ -618,7 +619,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     price: 7.00,
     options: ['Coca-Cola Normal', 'Coca-Cola Zero', 'Guaraná Antarctica', 'Fanta Laranja'],
     icon: '🥤',
-    image: '/src/assets/images/item_mate_gelado_1791309424171.jpg',
+    image: ASSET_IMAGES.mateGelado,
     isAvailable: true
   },
   {
@@ -628,7 +629,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Refrigerante tradicional geladinho',
     price: 7.00,
     icon: '🥤',
-    image: '/src/assets/images/item_mate_gelado_1791309424171.jpg',
+    image: ASSET_IMAGES.mateGelado,
     isAvailable: true
   },
   {
@@ -639,7 +640,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     price: 4.00,
     options: ['Coca-Cola 200ml', 'Fanta Uva 200ml', 'Fanta Laranja 200ml'],
     icon: '🥤',
-    image: '/src/assets/images/item_mate_gelado_1791309424171.jpg',
+    image: ASSET_IMAGES.mateGelado,
     isAvailable: true
   },
   {
@@ -649,7 +650,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Garrafa individual gelada',
     price: 8.00,
     icon: '🥤',
-    image: '/src/assets/images/item_mate_gelado_1791309424171.jpg',
+    image: ASSET_IMAGES.mateGelado,
     isAvailable: true
   },
   {
@@ -659,7 +660,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Tamanho família perfeito para compartilhar',
     price: 8.00,
     icon: '🍾',
-    image: '/src/assets/images/item_mate_gelado_1791309424171.jpg',
+    image: ASSET_IMAGES.mateGelado,
     isAvailable: true
   },
   {
@@ -669,7 +670,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Garrafa 500ml bem gelada',
     price: 2.50,
     icon: '💧',
-    image: '/src/assets/images/item_mate_gelado_1791309424171.jpg',
+    image: ASSET_IMAGES.mateGelado,
     isAvailable: true
   },
   {
@@ -679,7 +680,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Garrafa 500ml bem gelada',
     price: 3.50,
     icon: '🫧',
-    image: '/src/assets/images/item_mate_gelado_1791309424171.jpg',
+    image: ASSET_IMAGES.mateGelado,
     isAvailable: true
   },
 
@@ -692,7 +693,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     price: 12.00,
     options: ['Laranja', 'Goiaba', 'Maracujá', 'Acerola', 'Morango'],
     icon: '🍊',
-    image: '/src/assets/images/item_suco_natural_1791309385497.jpg',
+    image: ASSET_IMAGES.sucoNatural,
     isAvailable: true,
     highlight: true
   },
@@ -703,7 +704,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Batido com leite geladinho, cremoso e irresistível',
     price: 15.00,
     icon: '🍓',
-    image: '/src/assets/images/item_suco_natural_1791309385497.jpg',
+    image: ASSET_IMAGES.sucoNatural,
     isAvailable: true,
     highlight: true
   },
@@ -714,7 +715,7 @@ export const INITIAL_MENU_ITEMS: MenuItem[] = [
     desc: 'Cremoso, azedinho na medida perfeita e refrescante',
     price: 15.00,
     icon: '🍋',
-    image: '/src/assets/images/item_suco_natural_1791309385497.jpg',
+    image: ASSET_IMAGES.sucoNatural,
     isAvailable: true
   }
 ];
