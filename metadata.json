@@ -1,0 +1,6 @@
+{
+  "name": "Sol Café & Confeitaria",
+  "description": "Cardápio digital interativo e pedidos via WhatsApp para Sol Café & Confeitaria com doces finos, cafés, lanches e pratos especiais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
